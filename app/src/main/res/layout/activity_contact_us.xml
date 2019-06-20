@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d3d3d3"
+    android:orientation="vertical"
+
+    >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:theme="@style/AppTheme.AppBarOverlay">
+
+
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:id="@+id/toemail"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:background="@drawable/back"
+                android:layout_margin="20dp"
+                android:textColorHint="#000"
+                android:elevation="4dp"
+                android:hint="Enter your  Email Id"/>
+
+
+
+
+
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:id="@+id/sub"
+                android:gravity="center"
+                android:background="@drawable/back"
+                android:layout_margin="20dp"
+                android:elevation="4dp"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:hint="Enter subject"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:id="@+id/msg"
+                android:background="@drawable/back"
+                android:gravity="center"
+                android:layout_margin="20dp"
+                android:elevation="4dp"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:hint="Enter your message"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send"
+                android:elevation="4dp"
+                android:layout_gravity="start"
+                android:background="@drawable/back"
+                android:id="@+id/send"
+                android:textSize="25dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

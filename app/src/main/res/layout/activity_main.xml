@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e0e0e0"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="#e0e0e0">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="#F44336"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="30dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                        android:background="#fff"
+                        android:padding="5dp"
+                        android:src="@drawable/mapgreen" />
+
+                    <com.queerdevs.raj.punelocal.CustomAutoCompleteView
+                        android:id="@+id/Source"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_toLeftOf="@+id/delete"
+                        android:layout_toRightOf="@+id/imageView"
+                        android:background="#fff"
+                        android:completionThreshold="1"
+                        android:focusableInTouchMode="true"
+                        android:hint="From:"
+                        android:imeOptions="actionGo|actionSearch|actionSend|actionNext|actionDone|actionPrevious"
+                        android:maxLines="1"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textStyle="italic">
+
+                    </com.queerdevs.raj.punelocal.CustomAutoCompleteView>
+
+                    <TextView
+
+                        android:id="@+id/delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_alignParentRight="true"
+                        android:background="#ffffff"
+                        android:paddingBottom="0dp"
+                        android:paddingLeft="18dp"
+                        android:paddingRight="18dp"
+                        android:paddingTop="10dp"
+                        android:text="x"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sourceText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Source"
+                        android:paddingLeft="10dp"
+                        android:textColor="#000" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeLayout2"
+                    android:layout_centerHorizontal="true"
+                    android:background="#F44336"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="30dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                        android:background="#fff"
+                        android:padding="5dp"
+                        android:src="@drawable/mapred" />
+
+                    <com.queerdevs.raj.punelocal.CustomAutoCompleteView
+                        android:id="@+id/dest"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_toLeftOf="@+id/delete1"
+                        android:layout_toRightOf="@+id/imageView1"
+                        android:background="#fff"
+                        android:completionThreshold="1"
+                        android:focusableInTouchMode="true"
+                        android:hint="To:"
+                        android:imeOptions="actionGo|actionSearch|actionSend|actionNext|actionDone|actionPrevious"
+                        android:maxLines="1"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textStyle="italic">
+
+                    </com.queerdevs.raj.punelocal.CustomAutoCompleteView>
+
+                    <TextView
+                        android:id="@+id/destText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dest"
+                        android:paddingLeft="10dp"
+                        android:textColor="#000" />
+
+
+                    <TextView
+                        android:id="@+id/delete1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/dest"
+                        android:background="#ffffff"
+                        android:paddingBottom="0dp"
+                        android:paddingLeft="18dp"
+                        android:paddingRight="18dp"
+                        android:paddingTop="10dp"
+                        android:text="x"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeLayout1"
+                    android:background="#F44336">
+
+                    <ImageButton
+                        android:id="@+id/imageButton"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/round_swap"
+                        android:padding="20dp"
+
+                        android:src="@drawable/arrowss" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/relativeLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeLayout3"
+                    android:layout_centerHorizontal="true"
+                    android:background="#F44336"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+
+
+                    <EditText
+                        android:id="@+id/Date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginBottom="14dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/back"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:hint="dd/mm/yyyy"
+                        android:padding="10dp"
+                        android:textStyle="italic" />
+
+                    <CheckBox
+                        android:id="@+id/Next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="14dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/back"
+                        android:padding="10dp"
+                        android:text="Next Trains" />
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeLayout4"
+                    android:background="#e0e0e0"
+                    android:paddingTop="20dp">
+
+                    <Button
+
+                        android:id="@+id/Find"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="19dp"
+                        android:background="@drawable/backlist"
+                        android:padding="10dp"
+                        android:text="FIND TRAINS"
+                        android:textColor="#fff"
+                        android:textSize="18sp"
+                        android:textStyle="italic" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/drawer" />
+
+
+</android.support.v4.widget.DrawerLayout>
+
+
+
+
+

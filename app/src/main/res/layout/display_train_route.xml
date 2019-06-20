@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#e0e0e0"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+    </android.support.v7.widget.Toolbar>
+    <!--<RelativeLayout
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/relativeLayout"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingTop="7dp">
+
+        <TextView
+            android:id="@+id/ShowTrainName"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_width="wrap_content"
+            android:padding="5dp"
+            android:text=" Station Name"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/ShowCode"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:padding="5dp"
+            android:text=" Code"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/ShowTime"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:padding="5dp"
+            android:text="Time"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView1"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:dividerHeight="10dp"/>
+</RelativeLayout>

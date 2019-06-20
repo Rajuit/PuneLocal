@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Pune Local</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="closeDrawer">Navigation View</string>
+    <string name="openDrawer">Navigation View Closed</string>
+    <string name="about_us">Hello There !! Thank You for using   Pune Local App , Now You can get all type of local  train information  like :-  Next train from your Station , Route Map of Local Train running in Pune - to - Lonavala. And This app is  Offline App , All the Information provided here is solely owned by the Queer Developers.</string>
+
+</resources>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Train" >
+    <group android:id="@+id/appFeatureGroup">
+
+        <menu>
+
+
+        <item
+            android:id="@+id/Home"
+            android:checked="false"
+            android:icon="@drawable/house"
+            android:title="Home" />
+
+
+        <item
+            android:id="@+id/Map"
+            android:checked="false"
+            android:icon="@drawable/map"
+            android:title="Map" />
+        <item
+            android:id="@+id/Route"
+            android:checked="false"
+            android:icon="@drawable/route"
+            android:title="Route" />
+
+
+    </menu>
+    </group>
+</item>
+
+    <item
+        android:title="Communicate" >
+    <group android:id="@+id/appAboutGroup">
+        <menu>
+
+        <item
+            android:id="@+id/AboutUs"
+            android:checked="false"
+            android:icon="@drawable/ic_action_about"
+            android:title="About Us" />
+
+
+        <item
+            android:id="@+id/share"
+            android:checked="false"
+            android:icon="@drawable/ic_action_share"
+            android:title="Share With Your Friends" />
+
+        <item
+            android:id="@+id/rate"
+            android:checked="false"
+            android:icon="@drawable/ic_action_important"
+            android:title="Rate Us" />
+        <item
+            android:id="@+id/inbox"
+            android:checked="false"
+            android:icon="@drawable/chat"
+            android:title="@string/contact_us" />
+
+        <item
+            android:id="@+id/MoreApps"
+            android:checked="false"
+            android:icon="@drawable/more"
+            android:title="More Apps For Free" />
+
+
+    </menu>
+    </group>
+
+    </item>
+    <item
+        android:title="Update">
+    <group android:id="@+id/appAboutDatabase">
+        <menu>
+
+        <item
+            android:id="@+id/Update"
+            android:checked="false"
+            android:icon="@drawable/database"
+            android:title="Database Update" />
+        </menu>
+
+    </group>
+    </item>
+
+
+</menu>
